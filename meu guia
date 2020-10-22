@@ -1,0 +1,14 @@
+Componentes a serem criados
+
+
+
+1- Header
+2- Status
+3- Sobre
+4-Skills
+5- Footer
+6- Jobs
+
+Componentes Pai (Arvóre)
+
+Vue -> Pai geral
