@@ -42,7 +42,7 @@ export default {
 <style scoped>
 /*===SKILLS===*/
 .skills {
-  margin-top: 5%;
+  margin: 5% 15% 0px 15%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
@@ -60,7 +60,7 @@ export default {
 }
 .sckill-title h3 {
 
-  text-align: left;
+  text-align:center;
   font-size: 28px;
   line-height: 38px;
   color: #0e2431;
@@ -70,20 +70,18 @@ export default {
   width: 400px;
   height: 300px;
   border-radius: .5rem;
-  margin: 9px;
+  margin: 1.4rem;
 }
 .skills_skills {
     text-decoration: none !important;
     margin-top: 2%;
-    display: flex;
     align-items: center;
-    position: relative;
-    padding: .5rem 1rem;
+    padding: 0.6rem 1rem;
     border-radius: .5rem;
     box-shadow: 0 4px 25px rgba(14, 36, 49, .15);
 }
 .skills_skills:hover{
-  -webkit-transform: scale(1.1);
+  -webkit-transform: scale(0);
   transform: scale(1.1);
   transition: all 0.5s;
 

@@ -24,8 +24,8 @@ export default {
 /*===Sobre===*/
 
 .sobre{
-  margin-top: 5%;
   text-align: center;
+  margin: 5% 15% 0px 15%;
 }
 .title-sobre{
   font-size: 38px;
