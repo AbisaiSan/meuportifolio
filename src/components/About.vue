@@ -35,7 +35,7 @@ export default {
   width: 190px;
   height: 190px;
   border-radius:50%;
-  border: 3px solid #4070f4;
+  border: 3px solid var(--color-secundaria);
 }
 
 
@@ -45,7 +45,7 @@ export default {
   font-size: 48px;
   line-height: 35px;
   font-weight: 500;
-  color: #4070f4;
+  color:var(--color-secundaria);
   
 }
 .about-content h2 {
@@ -54,7 +54,7 @@ export default {
   font-size: 28px;
   line-height: 35px;
   font-weight: bold;
-  color: #0e2431;
+  color:var(--color-principal);
 
   
 }
@@ -63,7 +63,7 @@ export default {
   margin-top: 7px;
   font-size: 22px;
   line-height: 25px;
-  color: #0e2431;
+  color:(--color-principal);
   text-align: center;
 }
 
@@ -76,7 +76,7 @@ margin-top: 5%;
   padding: 10px;
 }
 .redes-sociais i:hover{
-  color: #4070f4 !important;
+  color: (--color-secundaria) !important;
   transition: color 300ms !important;
 }
 </style>

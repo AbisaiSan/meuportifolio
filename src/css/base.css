@@ -1,0 +1,18 @@
+:root {
+  --color-principal: #0e2431;
+  --color-secundaria :#4070f4;
+  --color-grey:#e0e0e0;
+  --color-withe:#FAFAFA;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
