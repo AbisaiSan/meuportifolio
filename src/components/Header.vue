@@ -1,10 +1,10 @@
 <template>
-  <header id="cabecalho">
-    <h1 id="logo">
+  <header class="cabecalho">
+    <h1 class="logo">
       <a>Abisai</a>
     </h1>
     <!-- Note que agora o botão de fechar está fora do link. -->
-    <button class="btn-menu" v-on:click="aparecer()">BUT</button>
+    <button class="btn-menu" v-on:click="aparecer()"><font-awesome-icon :icon = "['fas', 'bars']" /></button>
     
     <nav class="menu">
       <a  class="btn-close">x</a>
@@ -20,8 +20,10 @@
 
 </template>
 
-<script>
+<script> 
+
 export default {
+  
 methods:{
   aparecer(){
     let open = document.querySelector('.btn-menu');
@@ -35,21 +37,20 @@ methods:{
     close.addEventListener('click', function() {
       menu.style.display = 'none';
     });
-  }
+  },
+  
 }
+
 }
 </script>
 
 <style scoped>
 
-#cabecalho {
+.cabecalho {
     width: 100%;
-    display: flex;
-    background-color: #fff;
-    box-shadow: 0 1px 4px rgba(146, 161, 176, .15);
-    padding: 0.7% 0.7%;  
+    padding: 3% 4%;
 }
-#logo {
+.logo {
     width: 56px;
     height: 56px;
     float: left;
@@ -75,7 +76,7 @@ methods:{
  color: #fff;
  border-radius: 56px;
  cursor: pointer;
- background: linear-gradient(to right, #ce2e3c, #da6709);
+ background: linear-gradient(to right, #141E30,#243B55);
 }
 
 .btn-close {

@@ -5,12 +5,13 @@
       <img src="../assets/abisai.jpeg" alt="">
       <h1>Abisai Santos</h1>
       <h2>Desenvolvedor Mobile e Web</h2>
-      <h3>Programador Mobile e Web, apaixonado pelo front-end.<br> sempre em busca de desafios que me levem a novos aprendizados 
-        <i class="fa fa-rocket" aria-hidden="true"></i></h3>
+      <h3>Programador Mobile e Web, apaixonado pelo front-end. <br>Sempre em busca de desafios que me levem a novos aprendizados.
+      <font-awesome-icon style="color:#0e2431;" :icon = "['fas', 'rocket']" /> </h3>
+      
     </div>
     <div class="redes-sociais">
-      <a href="https://github.com/AbisaiSan" target="_blank"> <i style="color:#0e2431;" class="fa fa-linkedin fa-3x" aria-hidden="true"></i></a>
-      <a href="https://www.linkedin.com/in/abisai-santos/" target="_blank"><i style="color:#0e2431" class="fa fa-github fa-3x" aria-hidden="true"></i></a>
+      <a href="https://github.com/AbisaiSan" target="_blank"><font-awesome-icon class="icon" style="color:#0e2431;" :icon = "['fab', 'github']" size="2x"   /></a>
+      <a href="https://www.linkedin.com/in/abisai-santos/" target="_blank"><font-awesome-icon class="icon" style="color:#0e2431;" :icon = "['fab', 'linkedin']" size="2x"/></a>
     </div>
   </section>
 </template>
@@ -24,14 +25,15 @@ export default {
 <style scoped>
 
 /*===INFORMAÇÕES INICAIS===*/
+
 .about {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin-top: 5%;
   text-align: center;
 }
+
 .about img {
+  margin-top: 2%;
+  text-align: center;
   width: 190px;
   height: 190px;
   border-radius:50%;
@@ -40,18 +42,14 @@ export default {
 
 
 .about-content h1{
-  font-family: 'Roboto', sans-serif;
-  margin-top: 1%;
-  font-size: 48px;
+  font-size: 2.5em;
   line-height: 35px;
   font-weight: 500;
   color:var(--color-secundaria);
   
 }
 .about-content h2 {
-  font-family: 'Roboto', sans-serif;
-  margin-top: 1%;
-  font-size: 28px;
+  font-size: 1.5em;
   line-height: 35px;
   font-weight: bold;
   color:var(--color-principal);
@@ -59,21 +57,16 @@ export default {
   
 }
 .about-content h3 {
-  font-family: 'Roboto', sans-serif;
-  margin-top: 7px;
-  font-size: 22px;
+  font-size: 1.3em;
   line-height: 25px;
   color:(--color-principal);
-  text-align: center;
+  text-align: justify;
+  padding: 3% 4%;
 }
 
-.redes-sociais {
-margin-top: 5%;
 
-}
-.redes-sociais i{
-  text-align: end;
-  padding: 10px;
+.icon{
+  padding: 1%;
 }
 .redes-sociais i:hover{
   color: (--color-secundaria) !important;
