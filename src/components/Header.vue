@@ -1,20 +1,13 @@
 <template>
   <header class="cabecalho">
-    <h1 class="logo">
-      <a>Abisai</a>
-    </h1>
-    <!-- Note que agora o botão de fechar está fora do link. -->
-    <button class="btn-menu" v-on:click="aparecer()"><font-awesome-icon :icon = "['fas', 'bars']" /></button>
-    
+     <a href=""><img src="../assets/4.png" alt=""></a>
+       
     <nav class="menu">
-      <a  class="btn-close">x</a>
-      <ul>
         <li><a>Home</a></li>
         <li><a>Sobre</a></li>
         <li><a>Skills</a></li>
         <li><a>Jobs</a></li>
         <li><a>Blog</a></li>
-      </ul>
     </nav>
   </header>
 
@@ -46,65 +39,51 @@ methods:{
 
 <style scoped>
 
-.cabecalho {
+header {
+    background-color: #fff;
+    box-shadow: #243B55;
     width: 100%;
-    padding: 3% 4%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 30px;
 }
-.logo {
-    width: 56px;
-    height: 56px;
-    float: left;
-    background: url(../assets/logo-mobile.png) center center/56px no-repeat;
-    font-size: 0;
+header nav {
+  display: flex;
 }
-/*===MENU DE NAVEGAÇÃO===*/
-.menu {
-  display: none;
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  background-color:var(--color-principal);
-  top: 0;
-  left: 0;
+header img {
+  width: 200px;
+  margin-right:65px;
+}
+header li a{
+  color: var(--color-principal);
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+header li a:hover{
+  border-bottom: 3px solid var(--color-secundaria);
+}
+header li {
+  margin: 0 15px;
+}
+header li:first-child{
+  margin-left: 0;
+
+}
+header li:last-child{
+  margin-right: 0;
 }
 
-.btn-menu{
- width: 56px;
- height: 56px;
- float: right !important;
- text-align: center;
- color: #fff;
- border-radius: 56px;
- cursor: pointer;
- background: linear-gradient(to right, #141E30,#243B55);
-}
-
-.btn-close {
-  font-size: 3em;
-  color: #fff;
-  float: right;
-  cursor: pointer;
-  margin-right: 5%;
-}
-
-.menu ul {
-  width: 100%;
-  float: left;
-  text-align: center;
-}
-.menu li {
-  padding: 1.5%;
-}
-
-.menu li a{
-  font-size: 2em;
-  color: #fff;
-  padding: 1.5%;
-}
-
- .menu ul li a:hover{
-  border-bottom: 2px solid #d40e1f;
-  transition: color 500ms;
-  cursor: pointer;
+@media (max-width:700px){
+  header{
+   flex-direction: column;
+  }
+  header img {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
 }
 </style>

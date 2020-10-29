@@ -1,9 +1,14 @@
 :root {
   --color-principal: #0e2431;
   --color-secundaria :#4070f4;
+  --color-border:linear-gradient( #3a4f66 40%,#334357 50%);
   --color-grey:#e0e0e0;
   --color-withe:#FAFAFA;
+  --color-black:#222;
+  --color-linkedin:#0073b1;
+  --color-instagram: linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%); 
 }
+
 
 a {
   text-decoration: none;

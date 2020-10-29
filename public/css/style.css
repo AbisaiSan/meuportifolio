@@ -17,3 +17,15 @@ body {
   font-family: 'Open Sans', sans-serif;
   background-color: #FAFAFA;
 }
+
+nav, ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.9;
+}
+a:hover{
+  opacity: 1;
+}
