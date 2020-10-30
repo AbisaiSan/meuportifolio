@@ -1,16 +1,17 @@
 <template>
-   <div class="sobre">
-    <h1 class="title-sobre">Sobre</h1>
-    <div class="sobre-content">
-      <img id="img-sobre" src="../assets/abisai.jpeg" alt="">
-      <p  class="sobre-text">Sou formado em Analise e Desenvolvimento de Sistemas. 
+  <section class="caracteristicas">
+      <div class="grid">
+        <img style="" src="../assets/abisai.jpeg" alt="">
+        <p >Sou formado em Analise e Desenvolvimento de Sistemas. 
         Trabalho como desenvolvedor de software desde 2017, tenho amplo conhecimento em linguagens 
-        PHP e Javascript. 
+        PHP e Javascript.
         Já trabalhei com frameworks (Laravel, React, Vue.js) web e mobile. Gosto de planejar, resolver problemas 
         e criar soluções que tragam uma boa experiência ao usuário. 
         Sou apaixonado pelo front-end e a cada dia busco me tornar melhor no que faço.</p>
-    </div>
-  </div>
+        
+      </div>
+  </section>
+  
 </template>
 
 <script>
@@ -22,33 +23,53 @@ export default {
 <style scoped>
 
 /*===Sobre===*/
-
-.sobre{
-  text-align: center;
-  margin: 5% 15% 0px 15%;
+.caracteristicas {
+  margin-top: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 50px;
+  background-color: var(--color-principal);
 }
-.title-sobre{
-  font-size: 38px;
-  line-height: 48px;
-  color: #4070f4;
-}
-
-.sobre-content {
-  margin-top: 3%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-content: space-around;
+.caracteristicas .grid{
+  width: 100%;
+  display: flex;
+  padding: 0 70px;
 }
 
-#img-sobre {
-  width: 250px;
-  height: 240px;
-  border-radius: 10%; 
+.caracteristicas .grid img {
+  width: 220px;
+  height: 220px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
 }
-
-.sobre-text {
+.caracteristicas .grid p{
+  padding-left: 100px;
+  color:var(--color-withe);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: justify;
-  font-size: 18px;
-  line-height: 28px;
 }
+
+
+@media (max-width:850px){
+  .caracteristicas .grid {
+    flex-direction: column;
+     padding: 0;
+  }
+  .caracteristicas .grid p{
+    margin-top: 10%;
+    padding-left: 0;
+  }
+  .caracteristicas .grid img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 </style>

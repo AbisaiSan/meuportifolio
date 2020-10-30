@@ -2,9 +2,20 @@
   <footer>
   <a id="eu" href="">Abisai Santos</a>
     <div class="icons-footer"> 
-      <a href="https://www.instagram.com/abisaissantos/?hl=pt-br" target="_blank"><i style="color:#FFF; padding: 5px;" class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
-      <a href="https://www.linkedin.com/in/abisai-santos/" target="_blank"><i style="color:#FFF; padding: 5px;" class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
-      <a href="https://github.com/AbisaiSan" target="_blank"><i style="color:#FFF; padding: 5px;" class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+      <li>
+         <a href="https://github.com/AbisaiSan" target="_blank">
+            <font-awesome-icon class="icon github" style="color:#fff;" :icon = "['fab', 'github']" size="2x"/>
+         </a>
+         <a href="https://github.com/AbisaiSan" target="_blank">
+            <font-awesome-icon class="icon github" style="color:#fff;" :icon = "['fab', 'github']" size="2x"/>
+         </a>
+         <a href="https://github.com/AbisaiSan" target="_blank">
+            <font-awesome-icon class="icon github" style="color:#fff;" :icon = "['fab', 'github']" size="2x"/>
+         </a>
+         <a href="https://github.com/AbisaiSan" target="_blank">
+            <font-awesome-icon class="icon github" style="color:#fff;" :icon = "['fab', 'github']" size="2x"/>
+         </a>
+      </li>
     </div>
     <div class="copy">copy 2020 copyright all right reserved;</div>
 </footer>
@@ -19,9 +30,9 @@ export default {
 <style scoped>
   /*===FOOTER===*/
 footer{
+  width: 100%;
   padding: 16px;
-  margin-top: 4.5%;
-  border: 1px solid #eee;
+  margin-top: 10%;
   background-color: #0e2431;
   text-align: center;
 }
@@ -33,8 +44,13 @@ footer #eu {
   color: #FFFFFF;
   text-decoration: none;
 }
-.icons-footer {
-  margin-top: 2%;
+.icons-footer li {
+    margin-top: 2%;
+  list-style: none;
+}
+.icons-footer   a {
+  list-style: none;
+  padding:0 15px;
 }
 
 .copy{

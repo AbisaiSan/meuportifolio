@@ -10,7 +10,6 @@
         <li><a>Blog</a></li>
     </nav>
   </header>
-
 </template>
 
 <script> 
